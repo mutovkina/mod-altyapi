@@ -326,7 +326,7 @@ client.on('guildMemberRemove', async (member, guild, message) => {
     if (!hgbbkanal) return
 
     var embed = new Discord.RichEmbed()
-        .setDescription(`<@!${member.user.id}> sunucumuzdan ayrıldı. Görüşürüz!`)
+        .setDescription(`${member.user.tag} sunucumuzdan ayrıldı. Görüşürüz!`)
         .setColor('RANDOM') 
     member.guild.channels.get(hgbbkanal).send(embed)
 })
