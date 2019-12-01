@@ -315,7 +315,7 @@ client.on('guildMemberAdd', async (member, guild, message) => {
     if (!hgbbkanal) return
 
     var embed = new Discord.RichEmbed()
-        .setDescription(`${client.emojis.get("646420692975222785")} <@!${member.user.id}> sunucumuza katıldı. Hoşgeldin!`)
+        .setDescription(`<@!${member.user.id}> sunucumuza katıldı. Hoşgeldin!`)
         .setColor('RANDOM') 
     member.guild.channels.get(hgbbkanal).send(embed)
 })
@@ -326,13 +326,13 @@ client.on('guildMemberRemove', async (member, guild, message) => {
     if (!hgbbkanal) return
 
     var embed = new Discord.RichEmbed()
-        .setDescription(`${client.emojis.get("646420559361474600")} <@!${member.user.id}> sunucumuzdan ayrıldı. Görüşürüz!`)
+        .setDescription(`<@!${member.user.id}> sunucumuzdan ayrıldı. Görüşürüz!`)
         .setColor('RANDOM') 
     member.guild.channels.get(hgbbkanal).send(embed)
 })
 
 client.on('guildCreate', guild => {
-  let channel = client.channels.get("650063254579576907")
+  let channel = client.channels.get("EKLENDİM")
   const embed = new Discord.RichEmbed()
     .setColor("GREEN")
     .setAuthor(`Eklendim`)
@@ -346,7 +346,7 @@ client.on('guildCreate', guild => {
 });
 
 client.on('guildDelete', guild => {
-  let channel = client.channels.get("650063254579576907")
+  let channel = client.channels.get("ATILDIM")
   const embed = new Discord.RichEmbed()
     .setColor("RED")
     .setAuthor(`Atıldım`)
